@@ -10,4 +10,11 @@
 
     <color name="red_ec">#EC1C24</color>
     <color name="red_b2">#B2141A</color>
+    <color name="cream">#F5F0EC</color>
+    <color name="gray_d5">#D5D5D5</color>
+    <color name="gray_ae">#AEA5A0</color>
+    <color name="gray_e0">#E0E0E0</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="black_30">#303030</color>
+    <color name="black_22">#222222</color>
 </resources>

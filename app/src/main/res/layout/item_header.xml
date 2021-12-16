@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img_bg_profile3"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_search"
+        android:hint="Search Timeline"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:maxLines="1"
+        android:layout_marginEnd="16dp"
+        android:drawableEnd="@drawable/ic_fly"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:drawableStart="@drawable/ic_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/img_profile"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="35dp"
+        app:layout_constraintStart_toStartOf="@id/edtSearch"
+        app:layout_constraintTop_toBottomOf="@id/edtSearch"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_not_white"
+        app:layout_constraintStart_toStartOf="@id/imgProfile"
+        app:layout_constraintEnd_toEndOf="@id/imgProfile"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/imgNot"
+        app:layout_constraintStart_toStartOf="@id/imgNot"
+        app:layout_constraintEnd_toEndOf="@id/imgNot"
+        app:layout_constraintBottom_toBottomOf="@id/bg"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="South Jakarta"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imgNot"
+        app:layout_constraintTop_toBottomOf="@id/imgProfile" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txvWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morning"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/txvLocation"
+        app:layout_constraintStart_toStartOf="@id/txvLocation"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

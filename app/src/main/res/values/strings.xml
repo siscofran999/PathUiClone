@@ -4,4 +4,11 @@
     <string name="label_notification">Notification</string>
     <string name="label_message">Message</string>
     <string name="label_description">description</string>
+    <string name="label_msg1">Friends with <b>Albert Flores</b></string>
+    <string name="label_msg2">Changed his <b>picture</b></string>
+    <string name="label_msg3">Friends with <b>Theresa Webb</b></string>
+    <string name="label_msg4">Listening to Tinder Song by <b>Victory!</b></string>
+    <string name="label_song">Tinder Song - Single, 2017</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
